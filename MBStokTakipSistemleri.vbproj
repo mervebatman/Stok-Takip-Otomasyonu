@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46608563-3530-4D46-95BC-B95D7E989E9B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MBStokTakipSistemleri.My.MyApplication</StartupObject>
+    <RootNamespace>MBStokTakipSistemleri</RootNamespace>
+    <AssemblyName>MBStokTakipSistemleri</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MBStokTakipSistemleri.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MBStokTakipSistemleri.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAnaSayfa.Designer.vb">
+      <DependentUpon>FormAnaSayfa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAnaSayfa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBirimEkle.Designer.vb">
+      <DependentUpon>FormBirimEkle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBirimEkle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBirimSil.Designer.vb">
+      <DependentUpon>FormBirimSil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormBirimSil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKategoriEkle.Designer.vb">
+      <DependentUpon>FormKategoriEkle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormKategoriEkle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKategoriSil.Designer.vb">
+      <DependentUpon>FormKategoriSil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormKategoriSil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKullaniciGirisi.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKullaniciGirisi.Designer.vb">
+      <DependentUpon>FormKullaniciGirisi.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMarkaEkle.Designer.vb">
+      <DependentUpon>FormMarkaEkle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMarkaEkle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMarkaSil.Designer.vb">
+      <DependentUpon>FormMarkaSil.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMarkaSil.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMusteriEkle.Designer.vb">
+      <DependentUpon>FormMusteriEkle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMusteriEkle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMusteriListele.Designer.vb">
+      <DependentUpon>FormMusteriListele.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMusteriListele.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPersonelListele.Designer.vb">
+      <DependentUpon>FormPersonelListele.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormPersonelListele.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSatis.Designer.vb">
+      <DependentUpon>FormSatis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSatis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSatisListele.Designer.vb">
+      <DependentUpon>FormSatisListele.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSatisListele.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSatisRaporlari1.Designer.vb">
+      <DependentUpon>FormSatisRaporlari1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSatisRaporlari1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSifremiUnuttum.Designer.vb">
+      <DependentUpon>FormSifremiUnuttum.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSifremiUnuttum.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUrunEkle.Designer.vb">
+      <DependentUpon>FormUrunEkle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUrunEkle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUrunListele.Designer.vb">
+      <DependentUpon>FormUrunListele.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUrunListele.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUrunİade.Designer.vb">
+      <DependentUpon>FormUrunİade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormUrunİade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormYeniKullanici.Designer.vb">
+      <DependentUpon>FormYeniKullanici.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormYeniKullanici.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormYonetici.Designer.vb">
+      <DependentUpon>FormYonetici.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormYonetici.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanici.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SatisRaporu.vb" />
+    <Compile Include="Sepet.vb" />
+    <Compile Include="Stok.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormAnaSayfa.resx">
+      <DependentUpon>FormAnaSayfa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBirimEkle.resx">
+      <DependentUpon>FormBirimEkle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBirimSil.resx">
+      <DependentUpon>FormBirimSil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKategoriEkle.resx">
+      <DependentUpon>FormKategoriEkle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKategoriSil.resx">
+      <DependentUpon>FormKategoriSil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKullaniciGirisi.resx">
+      <DependentUpon>FormKullaniciGirisi.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMarkaEkle.resx">
+      <DependentUpon>FormMarkaEkle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMarkaSil.resx">
+      <DependentUpon>FormMarkaSil.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMusteriEkle.resx">
+      <DependentUpon>FormMusteriEkle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMusteriListele.resx">
+      <DependentUpon>FormMusteriListele.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPersonelListele.resx">
+      <DependentUpon>FormPersonelListele.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSatis.resx">
+      <DependentUpon>FormSatis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSatisListele.resx">
+      <DependentUpon>FormSatisListele.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSatisRaporlari1.resx">
+      <DependentUpon>FormSatisRaporlari1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSifremiUnuttum.resx">
+      <DependentUpon>FormSifremiUnuttum.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUrunEkle.resx">
+      <DependentUpon>FormUrunEkle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUrunListele.resx">
+      <DependentUpon>FormUrunListele.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUrunİade.resx">
+      <DependentUpon>FormUrunİade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormYeniKullanici.resx">
+      <DependentUpon>FormYeniKullanici.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormYonetici.resx">
+      <DependentUpon>FormYonetici.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource1.en-US.resx" />
+    <EmbeddedResource Include="Resource1.tr-TR.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
